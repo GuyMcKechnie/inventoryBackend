@@ -40,7 +40,7 @@ public class UserService {
       user.setMARKETING(updatedUser.getMARKETING());
       return userRepository.save(user);
     } else {
-      throw new RuntimeException("User not found.");
+      return null;
     }
   }
 

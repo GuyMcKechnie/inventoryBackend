@@ -21,21 +21,17 @@ public class User {
   private String CELLPHONE;
   private int MARKETING;
 
-  @JsonPropertyOrder(
-    { "USERID", "FIRSTNAME", "LASTNAME", "EMAIL", "CELLPHONE", "MARKETING" }
-  )
-  public User() {}
+  @JsonPropertyOrder({ "USERID", "FIRSTNAME", "LASTNAME", "EMAIL", "CELLPHONE", "MARKETING" })
+  public User() {
+  }
 
-  @JsonPropertyOrder(
-    { "USERID", "FIRSTNAME", "LASTNAME", "EMAIL", "CELLPHONE", "MARKETING" }
-  )
+  @JsonPropertyOrder({ "USERID", "FIRSTNAME", "LASTNAME", "EMAIL", "CELLPHONE", "MARKETING" })
   public User(
-    String first_name,
-    String last_name,
-    String email,
-    String cellphone,
-    int marketing
-  ) {
+      String first_name,
+      String last_name,
+      String email,
+      String cellphone,
+      int marketing) {
     this.FIRSTNAME = first_name;
     this.LASTNAME = last_name;
     this.EMAIL = email;
