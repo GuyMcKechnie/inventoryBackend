@@ -15,7 +15,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Buyer extends User {
-    @Id
     private ObjectId buyerId;
     private ObjectId userId;
     private ObjectId orderId;

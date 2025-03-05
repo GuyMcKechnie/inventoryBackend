@@ -1,5 +1,10 @@
 {
   "devDependencies": {
     "prettier-plugin-java": "^2.6.7"
+  },
+  "scripts": {
+    "push": "npm version patch && git push",
+    "push-minor": "npm version minor && git push",
+    "push-major": "npm version major && git push"
   }
 }

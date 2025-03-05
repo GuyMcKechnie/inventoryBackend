@@ -18,7 +18,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class Seller extends User {
-    @Id
     private ObjectId sellerId;
     private ObjectId userId;
     private List<Book> books;

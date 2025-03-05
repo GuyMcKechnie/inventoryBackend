@@ -1,50 +1,23 @@
-// package com.booklidio.booklidio_spring_backend.Users;
+package com.booklidio.booklidio_spring_backend.Users;
 
-// import jakarta.transaction.Transactional;
-// import java.util.List;
-// import java.util.Optional;
-// import org.springframework.beans.factory.annotation.Autowired;
-// import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.Optional;
 
-// @Service
-// public class UserService {
+import org.bson.types.ObjectId;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-//   private final UserRepository userRepository;
+@Service
+public class UserService {
 
-//   @Autowired
-//   public UserService(UserRepository userRepository) {
-//     this.userRepository = userRepository;
-//   }
+    @Autowired
+    private UserRepository userRepository;
 
-//   public User addUser(User user) {
-//     return userRepository.save(user);
-//   }
+    public List<User> getUsers() {
+        return userRepository.findAll();
+    }
 
-//   public List<User> getAllUsers() {
-//     return userRepository.findAll();
-//   }
-
-//   public Optional<User> getUserById(Long id) {
-//     return userRepository.findById(id);
-//   }
-
-//   @Transactional
-//   public User updateUser(Long id, User updatedUser) {
-//     Optional<User> existingUser = userRepository.findById(id);
-//     if (existingUser.isPresent()) {
-//       User user = existingUser.get();
-//       user.setFIRSTNAME(updatedUser.getFIRSTNAME());
-//       user.setLASTNAME(updatedUser.getLASTNAME());
-//       user.setEMAIL(updatedUser.getEMAIL());
-//       user.setCELLPHONE(updatedUser.getCELLPHONE());
-//       user.setMARKETING(updatedUser.getMARKETING());
-//       return userRepository.save(user);
-//     } else {
-//       return null;
-//     }
-//   }
-
-//   public void deleteUser(Long id) {
-//     userRepository.deleteById(id);
-//   }
-// }
+    public Optional<User> getUser(ObjectId id) {
+        return userRepository.findById(id);
+    }
+}
