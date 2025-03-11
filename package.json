@@ -7,7 +7,6 @@
     "push-minor": "npm version minor && git push",
     "push-major": "npm version major && git push"
   },
-  "version": "1.1.0",
-  "dependencies": {
-  }
+  "version": "1.1.1",
+  "dependencies": {}
 }
