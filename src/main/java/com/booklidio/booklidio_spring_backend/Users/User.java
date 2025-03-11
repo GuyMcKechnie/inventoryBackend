@@ -20,7 +20,7 @@ public class User {
     private String lastName;
     private String email;
     private String cellphone;
-    private Boolean marketing;
+    private Boolean allowsMarketing;
     private Boolean isBuyer;
     private Boolean isSeller;
 

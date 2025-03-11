@@ -20,4 +20,8 @@ public class UserService {
     public Optional<User> getUser(ObjectId id) {
         return userRepository.findById(id);
     }
+
+    public void addUser(User user) {
+        userRepository.save(user);
+    }
 }
