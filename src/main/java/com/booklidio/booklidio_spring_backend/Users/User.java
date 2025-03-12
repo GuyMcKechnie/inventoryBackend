@@ -24,4 +24,12 @@ public class User {
     private Boolean isBuyer;
     private Boolean isSeller;
 
+    public String getUserId() {
+        return userId.toHexString();
+    }
+
+    public void setUserId(String id) {
+        this.userId = new ObjectId(id);
+    }
+
 }

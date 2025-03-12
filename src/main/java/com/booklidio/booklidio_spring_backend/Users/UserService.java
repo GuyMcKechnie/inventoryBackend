@@ -17,11 +17,27 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public Optional<User> getUser(ObjectId id) {
-        return userRepository.findById(id);
+    public Optional<User> getUser(ObjectId userId) {
+        return userRepository.findById(userId);
     }
 
     public void addUser(User user) {
         userRepository.save(user);
+    }
+
+    public void editUser(ObjectId userId, User user) {
+        Optional<User> existingUser = userRepository.findById(userId);
+        if (existingUser.isPresent()) {
+            existingUser.get().setFirstName(user.getFirstName());
+            existingUser.get().setLastName(user.getLastName());
+            existingUser.get().setEmail(user.getEmail());
+            existingUser.get().setCellphone(user.getCellphone());
+            existingUser.get().setAllowsMarketing(user.getAllowsMarketing());
+            existingUser.get().setIsBuyer(user.getIsBuyer());
+            existingUser.get().setIsSeller(user.getIsSeller());
+            userRepository.save(existingUser.get());
+        } else {
+            throw new RuntimeException("User not found");
+        }
     }
 }

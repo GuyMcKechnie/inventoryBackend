@@ -15,10 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:5173", methods = { RequestMethod.GET, RequestMethod.POST,
+@CrossOrigin(origins = "http://localhost:5173", methods = {
+        RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT,
         RequestMethod.OPTIONS }, allowedHeaders = "*", maxAge = 3600)
 public class UserController {
 
@@ -39,6 +41,16 @@ public class UserController {
     public ResponseEntity<User> addUser(@RequestBody User user) {
         try {
             userService.addUser(user);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PutMapping("/editUser/{id}")
+    public ResponseEntity<User> editUser(@PathVariable("id") ObjectId id, @RequestBody User user) {
+        try {
+            userService.editUser(id, user);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
