@@ -1,0 +1,1002 @@
+[
+    {
+        "userId": "d13cec66-6706-45f2-8873-6ba5321bb318",
+        "firstName": "Jill",
+        "lastName": "Williams",
+        "email": "figueroaalan@example.net",
+        "cellphone": "556-253-2883x67641",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "718ca700-157a-49e6-bff6-9ebff97b257d",
+        "firstName": "Robert",
+        "lastName": "Anderson",
+        "email": "whiteheadsandra@example.com",
+        "cellphone": "(779)962-5257x475",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "b52b5328-e480-49cc-be3a-a0d71236a764",
+        "firstName": "James",
+        "lastName": "Patel",
+        "email": "raymond69@example.org",
+        "cellphone": "(834)764-0523x0061",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "c2e1a99d-ba81-4764-908f-cf152a7ee92c",
+        "firstName": "Marisa",
+        "lastName": "Oneill",
+        "email": "scotttaylor@example.net",
+        "cellphone": "001-558-618-4706x1284",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "795a45c8-5770-4825-92f6-e2a7bff75442",
+        "firstName": "Christopher",
+        "lastName": "Cross",
+        "email": "smithchristopher@example.net",
+        "cellphone": "(292)792-0334",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "8c4849e9-c72a-4238-8ef8-88e29cfebbfa",
+        "firstName": "Sean",
+        "lastName": "James",
+        "email": "gregtaylor@example.com",
+        "cellphone": "783.744.8914x28428",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "c8fdc87b-09d5-4799-aa3f-ac6d074b5df4",
+        "firstName": "Julia",
+        "lastName": "Wilson",
+        "email": "rodriguezbenjamin@example.net",
+        "cellphone": "784-537-9699x408",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "fad8cd19-3efa-4d4b-a4f1-d6b6dfc17b7a",
+        "firstName": "Cheyenne",
+        "lastName": "Logan",
+        "email": "sandybaker@example.com",
+        "cellphone": "968-455-1099",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "db223eb0-aa16-463a-9f1d-cd0fa523496c",
+        "firstName": "Megan",
+        "lastName": "Lawson",
+        "email": "ryanmccormick@example.com",
+        "cellphone": "9902741554",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "64258143-7d4e-4e7d-b97e-d6186ca29f5f",
+        "firstName": "John",
+        "lastName": "Trevino",
+        "email": "whitecheryl@example.com",
+        "cellphone": "+1-264-222-3357x325",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "d71dad0f-abb9-4169-a2d1-6b244562d807",
+        "firstName": "Mario",
+        "lastName": "Davis",
+        "email": "jennifer77@example.org",
+        "cellphone": "325.353.4988x4398",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "b210dbe4-8d2b-4c33-8149-9d85c4d5fcd0",
+        "firstName": "Jimmy",
+        "lastName": "Mcdaniel",
+        "email": "dcruz@example.net",
+        "cellphone": "(297)404-7813x797",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "b4e35013-dbea-4b77-803f-9ee47b97faa7",
+        "firstName": "Gregory",
+        "lastName": "Oneal",
+        "email": "lpennington@example.com",
+        "cellphone": "+1-721-202-4322x33184",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "d565bb7d-ed32-4f40-a00f-dbc9a2830943",
+        "firstName": "Brian",
+        "lastName": "Murray",
+        "email": "anne23@example.org",
+        "cellphone": "281.896.1427",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "b353f887-7194-495f-b0f6-5c59957e3ed5",
+        "firstName": "Beverly",
+        "lastName": "Larson",
+        "email": "william04@example.org",
+        "cellphone": "+1-823-991-7396x912",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "6198d29f-6632-4a46-8d61-c39b10a4eb28",
+        "firstName": "Brenda",
+        "lastName": "Byrd",
+        "email": "herreramichael@example.com",
+        "cellphone": "(496)507-5300",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "aa3bb501-ab9a-44c3-b34c-28e36f1d25c3",
+        "firstName": "Erik",
+        "lastName": "Klein",
+        "email": "diazrobert@example.net",
+        "cellphone": "235-893-0667x8371",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "74f19bee-266b-44e0-9138-05353199f09b",
+        "firstName": "Holly",
+        "lastName": "Pearson",
+        "email": "timothymartinez@example.com",
+        "cellphone": "335.615.9785",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "2562418c-98d6-470c-b6ea-49ef1ad32f37",
+        "firstName": "Andrew",
+        "lastName": "Brown",
+        "email": "joseph72@example.org",
+        "cellphone": "001-628-447-2998x4007",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "af4eed8b-3e8f-4612-a0e3-2cc0973fee42",
+        "firstName": "Elizabeth",
+        "lastName": "Graham",
+        "email": "nmorales@example.com",
+        "cellphone": "(662)356-8202x015",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "4d0cd851-1685-4961-8ebe-6a63d6d1c96f",
+        "firstName": "John",
+        "lastName": "Caldwell",
+        "email": "xortiz@example.org",
+        "cellphone": "514-955-2254x725",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "2ca96e87-4e17-4c64-9e3d-13ca470e4f89",
+        "firstName": "Douglas",
+        "lastName": "Norman",
+        "email": "gmeyers@example.com",
+        "cellphone": "(315)204-7684x68387",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "01399030-3326-4fa6-927e-c06666b9a76b",
+        "firstName": "Anthony",
+        "lastName": "Howard",
+        "email": "megan48@example.net",
+        "cellphone": "260.324.3460",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "317779df-2847-4b25-ae7d-8444a1decf0b",
+        "firstName": "John",
+        "lastName": "Decker",
+        "email": "ashleyrichardson@example.org",
+        "cellphone": "001-494-961-4978x108",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "0cc0ab62-36e7-436d-abfd-95943d189416",
+        "firstName": "Kim",
+        "lastName": "Stephens",
+        "email": "ryanbrady@example.org",
+        "cellphone": "3183419774",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "9e288763-4fa2-4ca9-bf21-5917da1ac9f7",
+        "firstName": "Lisa",
+        "lastName": "Dunn",
+        "email": "esolis@example.com",
+        "cellphone": "863.669.3936x4751",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "fe86b0d7-6eb1-4843-afe4-45b2b842b7e5",
+        "firstName": "Nathan",
+        "lastName": "Miller",
+        "email": "samantha42@example.com",
+        "cellphone": "001-628-696-2230x91461",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "403117e1-17e1-4782-8d07-bcffa7ee5603",
+        "firstName": "Todd",
+        "lastName": "Ross",
+        "email": "tyler92@example.net",
+        "cellphone": "635.311.7674x3247",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "cb82560b-ec71-458c-b5c9-434423c5bbb9",
+        "firstName": "Adam",
+        "lastName": "Gomez",
+        "email": "keyphilip@example.com",
+        "cellphone": "366.246.3215x414",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "396d0dc4-cf71-4a82-9522-b84a370cd0ea",
+        "firstName": "Benjamin",
+        "lastName": "Sherman",
+        "email": "lrodriguez@example.net",
+        "cellphone": "+1-685-248-2117x7077",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "fc160930-4592-48b6-a9b7-0bc11a65542e",
+        "firstName": "Michael",
+        "lastName": "Davis",
+        "email": "hglover@example.com",
+        "cellphone": "937.522.2757x52339",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "483ff7c2-b35e-45e7-93bc-c956311a4e44",
+        "firstName": "Daniel",
+        "lastName": "Wolfe",
+        "email": "amandadavis@example.org",
+        "cellphone": "786-655-9273",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "339f649d-1c43-4fc9-b3b8-ef20eb36346b",
+        "firstName": "Diana",
+        "lastName": "Reed",
+        "email": "qtorres@example.com",
+        "cellphone": "622.356.7915x946",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "7e4e607c-8938-4572-b9b5-dd97b519da62",
+        "firstName": "Ethan",
+        "lastName": "Gutierrez",
+        "email": "michael59@example.com",
+        "cellphone": "(239)984-1638",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "d2615549-e488-4606-b1db-f2beab37ce40",
+        "firstName": "Angela",
+        "lastName": "Robertson",
+        "email": "pdelacruz@example.net",
+        "cellphone": "+1-414-791-6906x342",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "18dc6bb9-d0f3-412b-8267-99f21e427dc0",
+        "firstName": "Melissa",
+        "lastName": "Ortiz",
+        "email": "uburton@example.org",
+        "cellphone": "573.293.0596x0675",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "00f6100d-6559-4d34-b224-63e58f680fcf",
+        "firstName": "Steven",
+        "lastName": "Johnson",
+        "email": "andrew96@example.com",
+        "cellphone": "001-913-927-9444x41271",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "2e6628ad-79e4-4453-b8e3-efd8c0a3a0e8",
+        "firstName": "Ashley",
+        "lastName": "Goodwin",
+        "email": "hinessara@example.org",
+        "cellphone": "+1-846-506-2369x63139",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "9a0cf475-67b6-4c93-b87c-c83ede096be3",
+        "firstName": "William",
+        "lastName": "Hamilton",
+        "email": "salastheresa@example.net",
+        "cellphone": "001-395-847-3849",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "e214f40a-b28e-4114-8523-e589e2fefc93",
+        "firstName": "Shawn",
+        "lastName": "Mathis",
+        "email": "phillipsjustin@example.org",
+        "cellphone": "809-322-0826x464",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "e75dad7a-55a8-4de6-8d57-681e8eb8c767",
+        "firstName": "Hayley",
+        "lastName": "Garcia",
+        "email": "bfernandez@example.org",
+        "cellphone": "(743)890-0891x7202",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "56d8b7e2-5a9b-4e84-b9c2-d47889952eef",
+        "firstName": "Kenneth",
+        "lastName": "Christensen",
+        "email": "imartin@example.org",
+        "cellphone": "448.378.4358x319",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "79c0ba7b-17f2-4125-95af-ec802db201e8",
+        "firstName": "Virginia",
+        "lastName": "Mercado",
+        "email": "ericwhite@example.net",
+        "cellphone": "(520)588-0303x9338",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "8e1569e4-ad34-498f-8536-69de79cd09dd",
+        "firstName": "Randy",
+        "lastName": "Harris",
+        "email": "kristiepark@example.net",
+        "cellphone": "001-909-788-3787x41974",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "746304e6-53d8-49bd-8e6b-9f2b0860b0c3",
+        "firstName": "John",
+        "lastName": "Parker",
+        "email": "vmiles@example.net",
+        "cellphone": "299.740.7920x6289",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "28bf5523-c1e6-4cf1-b988-d777430ff498",
+        "firstName": "Shawn",
+        "lastName": "Garcia",
+        "email": "saralove@example.com",
+        "cellphone": "735-236-0209x031",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "626f638f-6db0-4db8-befe-5212ec6585de",
+        "firstName": "Patricia",
+        "lastName": "Fritz",
+        "email": "sullivanchad@example.com",
+        "cellphone": "+1-952-547-8658x0721",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "c10e903e-ba5c-421b-bf6b-ee1a2760bcb1",
+        "firstName": "Ronald",
+        "lastName": "Nguyen",
+        "email": "maryevans@example.com",
+        "cellphone": "+1-440-823-8407x23202",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "469d7a3c-fc1d-4f5f-b61b-2803e7174731",
+        "firstName": "Brooke",
+        "lastName": "Jefferson",
+        "email": "johntaylor@example.com",
+        "cellphone": "366.341.8045",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "df5f25b0-69cb-4b44-bd47-ccdb70d8123a",
+        "firstName": "Kayla",
+        "lastName": "Schroeder",
+        "email": "tara33@example.com",
+        "cellphone": "250.499.0283",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "38bfb5be-4fc3-4620-82ed-9d25cce68d4c",
+        "firstName": "Manuel",
+        "lastName": "Ellis",
+        "email": "danieltate@example.org",
+        "cellphone": "001-454-767-8233x27018",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "91c9fa62-1db8-45cd-ad6a-8804f4d08331",
+        "firstName": "Ashley",
+        "lastName": "Johnson",
+        "email": "elizabethjones@example.net",
+        "cellphone": "412.743.5703",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "886b1439-e268-4295-8813-bfba178a6949",
+        "firstName": "Michael",
+        "lastName": "Russell",
+        "email": "john68@example.com",
+        "cellphone": "495.325.7377x9682",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "bd9d986a-7552-4c47-a630-151d5013c965",
+        "firstName": "Thomas",
+        "lastName": "Hubbard",
+        "email": "francismyers@example.org",
+        "cellphone": "001-262-317-9901",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "68bab4bf-86bf-4acc-9565-2d29f6875023",
+        "firstName": "Laura",
+        "lastName": "Bowman",
+        "email": "nicole40@example.com",
+        "cellphone": "706.374.9847",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "097c331a-b9c1-4c82-9e20-9421323ecbb5",
+        "firstName": "Christina",
+        "lastName": "Hodges",
+        "email": "laurenmiller@example.net",
+        "cellphone": "931.628.5064x3771",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "9bcdae3e-9f18-42f1-8550-ca7c68581a5f",
+        "firstName": "Donald",
+        "lastName": "Leon",
+        "email": "thomas13@example.com",
+        "cellphone": "+1-618-206-3308x4996",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "02646c41-f85f-4a53-8593-bc2527321034",
+        "firstName": "Stephanie",
+        "lastName": "Smith",
+        "email": "richardhendricks@example.org",
+        "cellphone": "001-677-587-7655",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "c6f6e04c-0181-49e3-ba46-64d22ea45337",
+        "firstName": "Heather",
+        "lastName": "Nguyen",
+        "email": "wilsongail@example.net",
+        "cellphone": "921.913.9979x031",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "c4f49b91-2ac3-4169-909a-b7d326c091df",
+        "firstName": "Sara",
+        "lastName": "Evans",
+        "email": "kyle83@example.net",
+        "cellphone": "(590)424-3380x42226",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "dfb86f2f-d7fe-47fb-8083-5cbb97a96a0e",
+        "firstName": "Carrie",
+        "lastName": "Peterson",
+        "email": "melissa28@example.net",
+        "cellphone": "001-274-859-5984x40860",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "ab609b35-c7dd-4a9f-9b02-b72d971065c4",
+        "firstName": "Mark",
+        "lastName": "Patel",
+        "email": "mayerbarbara@example.org",
+        "cellphone": "354-696-5227x73292",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "b3080c3e-0615-40a4-8625-78b4b13f24a7",
+        "firstName": "Jesse",
+        "lastName": "Walker",
+        "email": "jennifer13@example.net",
+        "cellphone": "+1-382-971-8534x006",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "db863a4f-4123-49db-8495-f30ff250385f",
+        "firstName": "Ryan",
+        "lastName": "Wilson",
+        "email": "robersoncatherine@example.com",
+        "cellphone": "833-604-5559x30272",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "5c6614ac-51dc-4d30-9861-a17290368679",
+        "firstName": "Heather",
+        "lastName": "Summers",
+        "email": "gardnerallison@example.org",
+        "cellphone": "560.781.5525x91079",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "6fa765cc-acfc-44c9-bbf1-6cb3b5eb622d",
+        "firstName": "Brett",
+        "lastName": "Underwood",
+        "email": "john32@example.net",
+        "cellphone": "001-348-220-9144",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "9acb3db7-f1e0-4413-91a1-f0ae3b58090a",
+        "firstName": "Kayla",
+        "lastName": "Hodge",
+        "email": "kerrthomas@example.org",
+        "cellphone": "685.759.0323x5273",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "3e4e2655-8141-444e-acb7-29a242a11043",
+        "firstName": "Dale",
+        "lastName": "Young",
+        "email": "breanna55@example.net",
+        "cellphone": "001-555-964-3276x2804",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "8a586571-25de-4802-a918-f481a2b729f0",
+        "firstName": "Vanessa",
+        "lastName": "Castillo",
+        "email": "yjenkins@example.org",
+        "cellphone": "(263)928-0528x0161",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "15ef3ebd-f03f-450a-8d4d-e58c3395cd6f",
+        "firstName": "Julie",
+        "lastName": "Little",
+        "email": "saundersernest@example.net",
+        "cellphone": "813-374-2849x790",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "4a96e1f6-674b-49d8-ba0e-1a2eebe7a56e",
+        "firstName": "Diana",
+        "lastName": "Jensen",
+        "email": "kevinnorton@example.net",
+        "cellphone": "(620)568-6291",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "5fd4eb54-1f42-4549-a8be-8700ba1412fe",
+        "firstName": "Kaitlin",
+        "lastName": "Harvey",
+        "email": "jerry12@example.org",
+        "cellphone": "6778554249",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "80fcaee8-5d2a-4279-a9d3-2655af8736d5",
+        "firstName": "Abigail",
+        "lastName": "Watts",
+        "email": "ywhite@example.net",
+        "cellphone": "725.240.1833x569",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "fd106342-f303-4822-8d00-6ce1a8e86ffe",
+        "firstName": "Nancy",
+        "lastName": "Guzman",
+        "email": "abigail72@example.net",
+        "cellphone": "948-718-4919",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "42b58187-71c4-4677-a8c9-2316b6417e28",
+        "firstName": "Zachary",
+        "lastName": "Wagner",
+        "email": "john01@example.com",
+        "cellphone": "487-473-4702x6274",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "e0901083-e8ab-440e-a4f3-127106d4e715",
+        "firstName": "Lauren",
+        "lastName": "Kim",
+        "email": "richardskayla@example.org",
+        "cellphone": "347-363-7921x0752",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "1dd3f8ae-c483-4639-9621-146dcc889095",
+        "firstName": "Jonathan",
+        "lastName": "Patrick",
+        "email": "ericchapman@example.net",
+        "cellphone": "897-201-2147x10100",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "8389e5a0-ce7e-4341-bdd2-099c99a060db",
+        "firstName": "Brian",
+        "lastName": "Huffman",
+        "email": "christopherfrost@example.com",
+        "cellphone": "344.934.8626x776",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "82082197-42ea-4525-9c47-70ea856f784e",
+        "firstName": "Rebecca",
+        "lastName": "Stewart",
+        "email": "kennethrice@example.com",
+        "cellphone": "001-824-520-5861",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "b3279be8-b565-46d3-a589-0590a048a7f1",
+        "firstName": "Dustin",
+        "lastName": "Moran",
+        "email": "brittanyhancock@example.org",
+        "cellphone": "386.799.6999",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "a47c07c2-0590-47a0-8951-73e46e8d72ba",
+        "firstName": "Sharon",
+        "lastName": "Becker",
+        "email": "barbarawallace@example.com",
+        "cellphone": "001-763-324-6275x506",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "f3744099-6cdc-4b44-be98-0e9be7e36f62",
+        "firstName": "Suzanne",
+        "lastName": "Richards",
+        "email": "ubaker@example.com",
+        "cellphone": "433-531-0018x5025",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "a1bc7838-2b02-48e7-93e1-374403aec700",
+        "firstName": "Nicholas",
+        "lastName": "Perez",
+        "email": "erin07@example.net",
+        "cellphone": "859.536.0558",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "e1261e76-d783-4b9a-a303-2cdc0f750847",
+        "firstName": "Debra",
+        "lastName": "Gamble",
+        "email": "laura45@example.org",
+        "cellphone": "(318)852-7498",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "c2ee7361-9102-46e8-a257-4c5956390d05",
+        "firstName": "Paul",
+        "lastName": "Johnson",
+        "email": "raymondjanet@example.net",
+        "cellphone": "471.729.4771",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "0f99eb72-d253-4347-9181-fd7f0fbfa658",
+        "firstName": "Patrick",
+        "lastName": "Hall",
+        "email": "sandraking@example.net",
+        "cellphone": "960.990.8866",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "32bd4d6f-4701-48a4-86ab-a6f0068f88f1",
+        "firstName": "Jasmine",
+        "lastName": "Powers",
+        "email": "michael67@example.net",
+        "cellphone": "3813139901",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "34195400-fa32-4027-8de1-8199aa088213",
+        "firstName": "Michael",
+        "lastName": "Watts",
+        "email": "efisher@example.org",
+        "cellphone": "300-812-0138",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "cad236fd-17c5-46b4-ad82-88e3765fd102",
+        "firstName": "Joseph",
+        "lastName": "Gonzalez",
+        "email": "buckdavid@example.com",
+        "cellphone": "001-867-280-1132x6753",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "70cfd9e8-47d1-4788-9249-6f96e18e04d5",
+        "firstName": "Shirley",
+        "lastName": "Castro",
+        "email": "erin17@example.org",
+        "cellphone": "2153732087",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "518ee1a7-28d5-496b-9a9c-28ce4c524e4c",
+        "firstName": "Veronica",
+        "lastName": "Ruiz",
+        "email": "danielcobb@example.com",
+        "cellphone": "678-614-7160x30982",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "ddf3fbac-8d3a-4e0d-91ed-8bebfc840ad6",
+        "firstName": "Mary",
+        "lastName": "Holland",
+        "email": "halldebra@example.net",
+        "cellphone": "733-447-5348x2445",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "b5f50dbb-dcc9-425d-a9db-c1a6c7b80123",
+        "firstName": "David",
+        "lastName": "Lynn",
+        "email": "zmeadows@example.com",
+        "cellphone": "(465)384-7414x01955",
+        "allowsMarketing": false,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "d8cb548a-a592-4d4c-8870-64fbad4a68fe",
+        "firstName": "Chelsea",
+        "lastName": "Ramirez",
+        "email": "jamesharrison@example.net",
+        "cellphone": "001-520-875-7329x307",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "162801c2-722f-4cea-8277-ec711de5ab7a",
+        "firstName": "Walter",
+        "lastName": "Gonzalez",
+        "email": "hmcdonald@example.com",
+        "cellphone": "324.248.7864",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": true
+    },
+    {
+        "userId": "42a26be7-5019-41aa-83b1-7a700b9c4057",
+        "firstName": "Kimberly",
+        "lastName": "Santos",
+        "email": "vanessaharris@example.org",
+        "cellphone": "+1-252-978-5286x557",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "1915c1ad-a270-4e27-baaf-ed711e6bc94d",
+        "firstName": "Abigail",
+        "lastName": "Schmidt",
+        "email": "glennlisa@example.net",
+        "cellphone": "857-330-5488x715",
+        "allowsMarketing": true,
+        "isBuyer": true,
+        "isSeller": false
+    },
+    {
+        "userId": "8df30a42-6b5f-4edf-8a80-19639e8599bd",
+        "firstName": "Brett",
+        "lastName": "Chapman",
+        "email": "chungbetty@example.org",
+        "cellphone": "347.925.6593",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": true
+    },
+    {
+        "userId": "8e13036d-02d9-4075-820a-c8e6d4981c4e",
+        "firstName": "Tammy",
+        "lastName": "Compton",
+        "email": "kyleperez@example.org",
+        "cellphone": "(715)978-3617x9512",
+        "allowsMarketing": true,
+        "isBuyer": false,
+        "isSeller": false
+    },
+    {
+        "userId": "8ae8d2ff-85c8-494f-8ff9-23282d24e1ce",
+        "firstName": "Timothy",
+        "lastName": "Walker",
+        "email": "santostiffany@example.com",
+        "cellphone": "917.334.1988x39750",
+        "allowsMarketing": false,
+        "isBuyer": true,
+        "isSeller": true
+    }
+]

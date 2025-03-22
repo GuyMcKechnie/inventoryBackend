@@ -2,11 +2,13 @@ package com.booklidio.booklidio_spring_backend.Users;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+@Transactional
 @Service
 public class UserService {
 
@@ -17,16 +19,26 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public Optional<User> getUser(ObjectId userId) {
-        return userRepository.findById(userId);
+    public Optional<User> getUser(String userId) {
+        return userRepository.findByUserId(userId);
     }
 
-    public void addUser(User user) {
-        userRepository.save(user);
+    public void addUser(User user) throws Exception {
+        if (userRepository.findByEmail(user.getEmail()).isPresent()) {
+            System.out.println("User with email: " + user.getEmail() + " already exists");
+            throw new Exception("User with email: " + user.getEmail() + " already exists");
+        }
+        try {
+            user.setUserId(UUID.randomUUID().toString());
+            userRepository.save(user);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
     }
 
-    public void editUser(ObjectId userId, User user) {
-        Optional<User> existingUser = userRepository.findById(userId);
+    public void editUser(String userId, User user) throws Exception {
+        Optional<User> existingUser = userRepository.findByUserId(userId);
         if (existingUser.isPresent()) {
             existingUser.get().setFirstName(user.getFirstName());
             existingUser.get().setLastName(user.getLastName());
@@ -37,7 +49,35 @@ public class UserService {
             existingUser.get().setIsSeller(user.getIsSeller());
             userRepository.save(existingUser.get());
         } else {
-            throw new RuntimeException("User not found");
+            throw new Exception("Edit: User not found");
+        }
+    }
+
+    public void duplicateUser(String userId) throws Exception {
+        Optional<User> existingUser = userRepository.findByUserId(userId);
+        if (existingUser.isPresent()) {
+            User user = existingUser.get();
+            User duplicatedUser = new User();
+            duplicatedUser.setUserId(UUID.randomUUID().toString());
+            duplicatedUser.setFirstName(user.getFirstName());
+            duplicatedUser.setLastName(user.getLastName());
+            duplicatedUser.setEmail(user.getEmail().concat(UUID.randomUUID().toString().split("-")[0]));
+            duplicatedUser.setCellphone(user.getCellphone());
+            duplicatedUser.setAllowsMarketing(user.getAllowsMarketing());
+            duplicatedUser.setIsBuyer(user.getIsBuyer());
+            duplicatedUser.setIsSeller(user.getIsSeller());
+            userRepository.save(duplicatedUser);
+        } else {
+            throw new Exception("Duplicate: User not found");
+        }
+    }
+
+    public void deleteUser(String userId) throws Exception {
+        Optional<User> existingUser = userRepository.findByUserId(userId);
+        if (existingUser.isPresent()) {
+            userRepository.delete(existingUser.get());
+        } else {
+            throw new Exception("Delete: User not found");
         }
     }
 }
