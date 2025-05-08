@@ -15,33 +15,36 @@ import com.google.analytics.data.v1beta.Metric;
 import com.google.analytics.data.v1beta.Row;
 import com.google.analytics.data.v1beta.RunReportRequest;
 import com.google.analytics.data.v1beta.RunReportResponse;
+import com.google.gson.Gson;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Comparator;
 
 @Service
 public class AnalyticsReportService {
 
     public String generateReport() throws IOException {
         try (BetaAnalyticsDataClient analyticsData = BetaAnalyticsDataClient.create()) {
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            Calendar calendar = Calendar.getInstance();
-            calendar.add(Calendar.YEAR, -5);
-            String oneYearAgo = simpleDateFormat.format(calendar.getTime());
             RunReportRequest request = RunReportRequest.newBuilder()
                     .setProperty("properties/" + 356932530)
                     .addDimensions(Dimension.newBuilder().setName("month"))
                     .addMetrics(Metric.newBuilder().setName("activeUsers"))
-                    .addDateRanges(DateRange.newBuilder().setStartDate("2021-01-01").setEndDate("today"))
+                    .addDateRanges(DateRange.newBuilder().setStartDate("365daysAgo").setEndDate("today"))
                     .build();
             RunReportResponse response = analyticsData.runReport(request);
-            StringBuilder json = new StringBuilder("[");
+            List<Map<String, String>> report = new ArrayList<>();
             for (Row row : response.getRowsList()) {
-                json.append("{\"month\":\"").append(row.getDimensionValues(0).getValue()).append("\",\"visits\":")
-                        .append(row.getMetricValues(0).getValue()).append("},");
+                Map<String, String> record = new HashMap<>();
+                record.put("month", row.getDimensionValues(0).getValue());
+                record.put("visits", row.getMetricValues(0).getValue());
+                report.add(record);
             }
-            if (json.length() > 1) {
-                json.deleteCharAt(json.length() - 1);
-            }
-            json.append("]");
-            return json.toString();
+
+            report.sort(Comparator.comparing(m -> m.get("month")));
+
+            Gson gson = new Gson();
+            return gson.toJson(report);
         }
     }
 }
