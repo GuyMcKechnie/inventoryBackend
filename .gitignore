@@ -3,5 +3,6 @@
 data
 node_modules
 target
-application.properties
 DatabaseScripts/
+src/main/resources/application.properties
+src/main/resources/application.properties
