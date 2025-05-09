@@ -34,7 +34,6 @@ public class UserService {
         } catch (Exception e) {
             System.out.println(e);
         }
-
     }
 
     public void editUser(String userId, User user) throws Exception {

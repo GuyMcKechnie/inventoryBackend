@@ -5,4 +5,4 @@ node_modules
 target
 DatabaseScripts/
 src/main/resources/application.properties
-src/main/resources/application.properties
+.env
