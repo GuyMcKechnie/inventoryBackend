@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
         RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE,
         RequestMethod.OPTIONS }, allowedHeaders = "*", maxAge = 3600)
 public class UserController {
+    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     private UserService userService;
@@ -32,7 +33,7 @@ public class UserController {
         try {
             return new ResponseEntity<>(userService.getUsers(), HttpStatus.OK);
         } catch (Exception e) {
-            System.out.println(e);
+            logger.error("Error fetching users", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -42,7 +43,7 @@ public class UserController {
         try {
             return new ResponseEntity<>(userService.getUser(userId), HttpStatus.OK);
         } catch (Exception e) {
-            System.out.println(e);
+            logger.error("Error fetching user with ID: " + userId, e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -53,7 +54,7 @@ public class UserController {
             userService.addUser(user);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
-            System.out.println(e);
+            logger.error("Error adding user", e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -64,7 +65,7 @@ public class UserController {
             userService.editUser(userId, user);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
-            System.out.println(e);
+            logger.error("Error editing user with ID: " + userId, e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -75,6 +76,7 @@ public class UserController {
             userService.duplicateUser(userId);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
+            logger.error("Error duplicating user with ID: " + userId, e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -85,7 +87,7 @@ public class UserController {
             userService.deleteUser(userId);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
-            System.out.println(e);
+            logger.error("Error deleting user with ID: " + userId, e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

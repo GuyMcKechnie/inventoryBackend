@@ -10,47 +10,64 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @Service
 public class BookService {
+    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(BookService.class);
 
     @Autowired
     private BookRepository bookRepository;
 
     public List<Book> getBooks() {
-        return bookRepository.findAll();
+        try {
+            return bookRepository.findAll();
+        } catch (Exception e) {
+            logger.error("Error fetching books", e);
+            throw new RuntimeException("Error fetching books", e);
+        }
     }
 
     public Optional<Book> getBook(String isbn) {
-        return bookRepository.findByIsbn(isbn);
+        try {
+            return bookRepository.findByIsbn(isbn);
+        } catch (Exception e) {
+            logger.error("Error fetching book with ISBN: " + isbn, e);
+            throw new RuntimeException("Error fetching book with ISBN: " + isbn, e);
+        }
     }
 
-    public void addBook(Book book) throws Exception {
-        if (bookRepository.findByIsbn(book.getIsbn()).isPresent()) {
-            System.out.println("Book with ISBN: " + book.getIsbn() + " already exists");
-            throw new Exception("Book with ISBN: " + book.getIsbn() + " already exists");
-        }
+    public void addBook(Book book) {
         try {
             bookRepository.save(book);
         } catch (Exception e) {
-            System.out.println(e);
+            logger.error("Error adding book", e);
+            throw new RuntimeException("Error adding book", e);
         }
     }
 
-    public void editBook(String isbn, Book book) throws Exception {
-        Optional<Book> existingBook = bookRepository.findByIsbn(isbn);
-        if (existingBook.isPresent()) {
+    public void editBook(String isbn, Book book) {
+        try {
+            Optional<Book> existingBook = bookRepository.findByIsbn(isbn);
+            if (existingBook.isEmpty()) {
+                logger.error("Error editing book with ISBN: " + isbn + " - Book not found");
+                throw new RuntimeException("Error editing book with ISBN: " + isbn + " - Book not found");
+            }
             existingBook.get().setTitle(book.getTitle());
             existingBook.get().setGrade(book.getGrade());
             existingBook.get().setNewPrice(book.getNewPrice());
             existingBook.get().setUsedPrice(book.getUsedPrice());
             existingBook.get().setCostPrice(book.getCostPrice());
             bookRepository.save(existingBook.get());
-        } else {
-            throw new Exception("Edit: Book not found");
+        } catch (Exception e) {
+            logger.error("Error editing book with ISBN: " + isbn + " - Book not found");
+            throw new RuntimeException("Error editing book with ISBN: " + isbn + " - Book not found");
         }
     }
 
-    public void duplicateBook(String isbn) throws Exception {
-        Optional<Book> existingBook = bookRepository.findByIsbn(isbn);
-        if (existingBook.isPresent()) {
+    public void duplicateBook(String isbn) {
+        try {
+            Optional<Book> existingBook = bookRepository.findByIsbn(isbn);
+            if (existingBook.isEmpty()) {
+                logger.error("Error duplicating book with ISBN: {} - Book not found", isbn);
+                throw new RuntimeException("Error duplicating book with ISBN: " + isbn + " - Book not found");
+            }
             Book book = existingBook.get();
             Book duplicatedBook = new Book();
             duplicatedBook.setTitle(book.getTitle());
@@ -59,17 +76,23 @@ public class BookService {
             duplicatedBook.setUsedPrice(book.getUsedPrice());
             duplicatedBook.setCostPrice(book.getCostPrice());
             bookRepository.save(duplicatedBook);
-        } else {
-            throw new Exception("Duplicate: Book not found");
+        } catch (Exception e) {
+            logger.error("Error duplicating book with ISBN: " + isbn, e);
+            throw new RuntimeException("Error duplicating book with ISBN: " + isbn, e);
         }
     }
 
-    public void deleteBook(String isbn) throws Exception {
-        Optional<Book> existingBook = bookRepository.findByIsbn(isbn);
-        if (existingBook.isPresent()) {
+    public void deleteBook(String isbn) {
+        try {
+            Optional<Book> existingBook = bookRepository.findByIsbn(isbn);
+            if (existingBook.isEmpty()) {
+                logger.error("Error deleting book with ISBN: {} - Book not found", isbn);
+                throw new Exception("Error deleting book with ISBN: " + isbn + " - Book not found");
+            }
             bookRepository.delete(existingBook.get());
-        } else {
-            throw new Exception("Delete: Book not found");
+        } catch (Exception e) {
+            logger.error("Error deleting book with ISBN: " + isbn, e);
+            throw new RuntimeException("Error deleting book with ISBN: " + isbn, e);
         }
     }
 }
